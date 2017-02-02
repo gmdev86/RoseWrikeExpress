@@ -9,7 +9,7 @@
     };
 
     signOut() {
-        window.location.replace("/");
+        window.location.replace("/Logout");
     };
 
 };

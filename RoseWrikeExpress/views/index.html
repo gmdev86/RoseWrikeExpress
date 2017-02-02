@@ -123,7 +123,11 @@
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
-            <div class="row">
+            <div class="row" id="divLoading">
+                <i class="fa fa-cog fa-spin fa-5x fa-fw"></i>
+                <span class="sr-only">Loading...</span>
+            </div>
+            <div class="row" id="secTasks" style="display:none;">
                 <div class="col-lg-3 col-md-6">
                     <div class="panel panel-green">
                         <div class="panel-heading">
@@ -166,10 +170,14 @@
     <script src="/public/dist/js/sb-admin-2.js"></script>
     <!-- Custom JavaScript -->
     <script src="/public/javascripts/LogoutMgr.js"></script>
+    <script src="/public/javascripts/indexMgr.js?v=1.00"></script>
     <script type="text/javascript">
         window.onload = function () {
             var logoutMgr = new LogoutMgr();
         };
+        $(document).ready(function () {
+            var indexMgr = new IndexMgr();
+        });
     </script>
 </body>
 </html>
